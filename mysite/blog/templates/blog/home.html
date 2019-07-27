@@ -1,0 +1,71 @@
+
+{% extends "blog/base.html" %}
+{% load static %}
+  {% block content %}
+    <div class="slider" style="height:400px;">
+      <ul class="slides">
+        <li>
+          <img src="{% static 'blog/example2.jpg' %}" alt="">
+        </li>
+        <li>
+          <img src="{% static 'blog/example3.jpg' %}" alt="">
+        </li>
+        <li>
+          <img src="{% static 'blog/example4.jpg' %}" alt="">
+        </li>
+      </ul>
+    </div>
+
+    <div class="container">
+      <div class="card horizontal">
+        <div class="card-image">
+          <img src="{% static 'blog/canteen.jpg' %}" alt="">
+        </div>
+        <div class="card-stacked">
+          <div class="card-title" style="padding:10px;">
+              WELCOME TO MY WEBSITE
+          </div>
+          <div class="card-content">
+            Greeting from the Developer's of the website
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="card horizontal">
+        <div class="card-image">
+          <img src="{% static 'blog/canteen.jpg' %}" alt="">
+        </div>
+        <div class="card-stacked">
+          <div class="card-title" style="padding:10px;">
+              NEW HERE!!
+          </div>
+          <div class="card-content">
+            Then continue to the sign up page for making a new account
+          </div>
+          <div class="card-action">
+            <a href="/register" class="btn blue right">register</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="card horizontal">
+        <div class="card-image">
+          <img src="{% static 'blog/canteen.jpg' %}" alt="">
+        </div>
+        <div class="card-stacked">
+          <div class="card-title" style="padding:10px;">
+              ALREADY HAVE AN ACCOUNT!!
+          </div>
+          <div class="card-content">
+            Then login and be amazed!!
+          </div>
+          <div class="card-action">
+            <a href="/login" class="btn blue right">login</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  {%endblock content%}
